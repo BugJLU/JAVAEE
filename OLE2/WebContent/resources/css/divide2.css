@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+.mider{
+	position:relative;
+	width:100%;
+	height:800px;
+}
+.mider .left{
+	position:absolute;
+	width:200px;
+	height:800px;
+	top:0;
+	left:0;
+	background:white;
+}
+.mider .right{
+	width:100%;
+	height:800px;
+	float:left;
+	margin-left:205px;
+	background:white;
+}
+.mider .left li{
+	padding:10px;
+}
+.mider .right li{
+	padding:10px;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Index</title>
+<link rel="stylesheet" href="resources/css/button.css"/>
+<link rel="stylesheet" href="resources/css/footer.css"/>
+</head>
+<body>
+<h:inputText id="user" value="#{studentBean.uname}"/>
+<h:form>
+<h:commandButton value="hhhhh"></h:commandButton>
+</h:form>
+<h:commandButton color="red" value="test" />
+<div align="center">
+	<form>
+		<table>
+			<tr>
+				<th>
+					<div align="center">
+						<h:commandButton  value="题库管理" action="qusetionManage.xhtml" />
+					</div>
+				</th>
+				<th>
+					<div align="center">
+						<h:commandButton   value="试卷管理" action="paperManage.xhtml" />
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div align="center">
+						<h:commandButton   value="考试信息发布" action="releaseInformation.xhtml" />
+					</div>
+				</th>
+				<th>
+					<div align="center">
+						<h:commandButton   value="成绩管理" action="markManage.xhtml" />
+					</div>
+				</th>
+			</tr>
+		</table>
+		
+		
+	</form>
+	
+</div>
+<div class="footer">
+	<p class="p1">
+		<a href="#">联系我们</a>|
+		<a href="#">问题反馈</a>|
+		<a href="#">其它</a>|
+	</p>
+	<p class="p2">
+		<strong>Copy right@</strong>
+	</p>
+</div>
+</body>
+</html>

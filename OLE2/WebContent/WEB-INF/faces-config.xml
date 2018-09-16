@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<navigation-rule>
+		<display-name>login.xhtml</display-name>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>succ</from-outcome>
+			<to-view-id>/index.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>register.xhtml</display-name>
+		<from-view-id>/register.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>succ</from-outcome>
+			<to-view-id>/login.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>findpass.xhtml</display-name>
+		<from-view-id>/findpass.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>succ</from-outcome>
+			<to-view-id>/login.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>exam.xhtml</display-name>
+		<from-view-id>/exam.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>logfalu</from-outcome>
+			<to-view-id>/login.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>

@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+.pane{
+		background:white;
+		width:400px;
+		height:300px;
+		margin:200px auto;
+		text-align:center;
+		border:solid #0F0 1px;
+		position:relative;
+	}
+	#user{
+		width: 200px;
+		height: 30px;
+		border:solid #ccc 1px;
+		border-radius: 3px;
+		padding-left: 32px;
+		margin-left:5px;
+	}
+	#pwd{
+		width: 200px;
+		height: 30px;
+		border:solid #ccc 1px;
+		border-radius: 3px;
+		padding-left: 32px;
+		margin-left:20px;
+	}
+	#mail{
+		width: 200px;
+		height: 30px;
+		border:solid #ccc 1px;
+		border-radius: 3px;
+		padding-left: 32px;
+		margin-left:15px;
+	}
+	#submit{
+		width: 180px;
+		height: 30px;
+		background: rgba(0,0,0,.1);
+		border:solid #ccc 1px;
+		border-radius: 3px;
+		margin-left:50px;
+	}

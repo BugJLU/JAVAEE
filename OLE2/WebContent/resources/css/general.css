@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+body{
+	margin:0;
+	padding: 0;
+	background:#E9E9E9;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}

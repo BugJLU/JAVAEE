@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/css/general.css"/>
+<link rel="stylesheet" href="resources/css/header.css"/>
+<link rel="stylesheet" href="resources/css/divide2.css"/>
+<link rel="stylesheet" href="resources/css/footer.css"/>
+<title>Exam</title>
+</head>
+<body>
+<div class="header">
+	<h1><span>Exam Online</span></h1>
+	<ul class="mainNavigation">
+		<li><a href="/OLE/faces/index.xhtml"><strong>首页</strong></a></li>
+		<li><a href="/OLE/faces/account.xhtml"><strong>个人信息</strong></a></li>
+	</ul>
+	<ul class="topNavigation">
+		<li><a href="/OLE/faces/login.xhtml"><span>登录</span></a></li>
+	</ul>
+</div>
+<div class="mider">
+	<div class="left">
+		<h:form>
+			<ul>
+				<li><h:commandLink value="考试报名" action="#{studentBean.showExams()}"></h:commandLink></li>
+				<li><h:commandLink value="我的报名" action="#{studentBean.myExam()}"></h:commandLink></li>
+			</ul>
+		</h:form>
+	</div>
+	<div class="right">
+		<h:form>
+			<h:dataTable value="#{studentBean.examlist}" boder="1" var="exam">
+				<h:column>
+					<h:outputText value="#{exam.examtitle}"></h:outputText>
+				</h:column>
+				<h:column>
+					<h:outputText value="#{exam.date}"></h:outputText>
+				</h:column>
+				<h:column>
+					<h:commandLink value="报名" action="#{studentBean.joinExam(exam)}"></h:commandLink>
+				</h:column>
+				<h:column>
+					<h:commandLink value="查看" action="#{studentBean.seeMyExam(exam)}"></h:commandLink>
+				</h:column>
+			</h:dataTable>
+		</h:form>
+	</div>
+</div>
+<div class="footer">
+	<p class="p1">
+		<a href="#">联系我们</a>|
+		<a href="#">问题反馈</a>|
+		<a href="#">其它</a>|
+	</p>
+	<p class="p2">
+		<strong>Copy right@</strong>
+	</p>
+</div>	
+
+</body>
+</html>
